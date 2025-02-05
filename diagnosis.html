@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تشخیص</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>تشخیص سسٹم</h1>
+    </header>
+
+    <section class="form-container">
+        <label for="patientName">مریض کا نام:</label>
+        <input type="text" id="patientName">
+
+        <label for="motherName">مریض کی والدہ کا نام:</label>
+        <input type="text" id="motherName">
+
+        <label for="daySelect">دن منتخب کریں:</label>
+        <select id="daySelect">
+            <option value="1">اتوار</option>
+            <option value="2">پیر</option>
+            <option value="3">منگل</option>
+            <option value="4">بدھ</option>
+            <option value="5">جمعرات</option>
+            <option value="6">جمعہ</option>
+            <option value="7">ہفتہ</option>
+        </select>
+
+        <label>وقت منتخب کریں:</label>
+        <div>
+            <input type="radio" id="dayTime" name="time" value="1" checked>
+            <label for="dayTime">دن</label>
+            <input type="radio" id="nightTime" name="time" value="2">
+            <label for="nightTime">رات</label>
+        </div>
+
+        <button onclick="calculateDiagnosis()">تشخیص کریں</button>
+        <h3>نتیجہ:</h3>
+        <p id="resultText">یہاں نتیجہ ظاہر ہوگا...</p>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
